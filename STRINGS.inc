@@ -1,0 +1,61 @@
+; Note for self, MS-DOS uses code page 437 instead of standard ASCII to support special symbols
+; List: https://en.wikipedia.org/wiki/Code_page_437#Character_set
+
+Str_OK db "<OK>$"
+Str_Empty db "$"
+
+Str_SaveFileName db "EMSDATA.DAT", 0 	; zero-terminated because DOS API says so
+
+Str_MainMenu db "Main Menu$"
+Str_AssemblyEMS db "AssemblyEMS$"
+Str_EMS db "Event Management System$"
+Str_Students db "Students$"
+Str_Staff db "Staff$"
+Str_Exit db "Exit$"
+Str_MainMenuKeys db "<", 24d, "><", 25d, ">Move Selection   <Enter>Choose Selection$"
+Str_EnterTPNumber db "Please enter your TP number to proceed:$"
+Str_TPDialogKeys db "<Esc>Cancel   <Enter>Proceed$"
+Str_InvalidTPNumber db "Invalid TP number!$"
+
+Str_EventList db "Event List$"
+Str_Events db "Events$"
+Str_Keys db "Keys$"
+Str_User db "User$"
+Str_TP db "TP$"
+Str_Total db "Total$"
+Str_EventListAdminKeys db "<N>", 0ah, "New Event", 0ah, 0ah, "<", 24d, "><", 25d, ">", 0ah, "Move Selection", 0ah, 0ah, "<Enter>", 0ah, "View Details", 0ah, 0ah, "<Esc>", 0ah, "Finish$"
+Str_EventListKeys db "<", 24d, "><", 25d, ">", 0ah, "Move Selection", 0ah, 0ah, "<Space>", 0ah, "Toggle Join", 0ah, 0ah, "<Enter>", 0ah, "View Details", 0ah, 0ah, "<Esc>", 0ah, "Finish$"
+Str_NoEvents db ":(", 0ah, "Looks like there currently aren't any events,", 0ah, "please come back again in the near future!$"
+Str_NewEvent db "New Event "
+Str_Participants db "Participants:$"
+Str_Price db "Price: " 		; intentional fallthrough
+Str_RM db "RM$"
+Str_Status db "Status:$"
+Str_Open db "Open$"
+Str_Selected db "Selected$"
+Str_Full db "Full$"
+Str_Closed db "Closed$"
+Str_LimitReached db "The event management system only supports a maximum of 10 events. It", 0ah, "appears that you have already reached this limit, kindly delete some", 0ah, "events before creating new ones.$"
+Str_ConfirmPayment db "You have selected    event(s) with a total price of RM    .", 0ah, "Would you like to proceed with payment?", 0ah, 0ah, "Note that picking <No> will quit your session and discard", 0ah, "the chosen events.$"
+Str_ConfirmPaymentKeys db "<", 27d, "><", 26d, ">Move Selection   <Enter>Choose Selection   <Esc>Cancel$"
+
+Str_EventDetails db "Event Details$"
+Str_Title db "Title$"
+Str_Description db "Description$"
+Str_DetailsAdminKeys db "<Enter>Show Action Menu   " 		; intentionally without $
+Str_DetailsKeys db "<Esc>Back to Main Menu$"
+Str_ActionMenu db "Action Menu$"
+Str_ActionMenuItems db "Edit title", 0ah, "Edit description", 0ah, "Set background colour", 0ah, "Set text colour", 0ah, "Set participant limit", 0ah, "Set price", 0ah, "Toggle event status", 0ah, "Show participants", 0ah, "Delete event$"
+Str_ActionMenuKeys db "<", 24d, "><", 25d, ">Move Selection   <Enter>Choose Selection   <Esc>Cancel$"
+Str_TitleEditKeys db "<Esc>Exit Title Edit Mode$"
+Str_DescEditKeys db "<Esc>Exit Description Edit Mode$"
+Str_KeepChanges db "Do you want to keep your changes?$"
+Str_YesNo db "<Yes>   <No>$"
+Str_YesNoKeys db "<", 27d, "><", 26d, ">Move Selection   <Enter>Choose Selection$"
+Str_Colours db "Black", 0ah, "Blue", 0ah, "Green", 0ah, "Cyan", 0ah, "Red", 0ah, "Magenta", 0ah, "Brown", 0ah, "Light gray$"
+Str_FillLimit db "Please fill in your desired participants limit (Max. 100):$"
+Str_FillPrice db "Please fill in the desired price for the event (Max. RM255):$"
+
+Str_ParticipantsList db "Participants List$"
+Str_Event db "Event:$"
+Str_ParticipantsListKeys db "<Esc>Back to Event Details$"
