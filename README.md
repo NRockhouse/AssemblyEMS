@@ -14,4 +14,5 @@ Executing `RUN.BAT` would compile and run the program by executing TASM, TLINK, 
 ![Event details](https://i.imgur.com/LGkhiOO.png)
 ![Admin action menu](https://i.imgur.com/zyEx7xT.png)
 ![Participants list](https://i.imgur.com/Is82wSg.png)
+
 [Imgur album](https://imgur.com/a/0DLbpCZ)
